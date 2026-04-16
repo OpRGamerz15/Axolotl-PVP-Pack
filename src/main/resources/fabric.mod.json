@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "thunderclient",
+  "version": "${version}",
+  "name": "Thunder Client",
+  "description": "A premium-style high-performance Fabric client with legit gameplay enhancements.",
+  "authors": ["Thunder Team"],
+  "contact": {
+    "homepage": "https://example.com",
+    "sources": "https://github.com/example/thunder-client"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.thunderclient.ThunderClient"
+    ]
+  },
+  "mixins": [
+    "thunderclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*"
+  }
+}
